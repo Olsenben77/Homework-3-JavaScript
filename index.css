@@ -1,0 +1,35 @@
+hr 
+{
+      width: auto;
+      border: 1px solid lightgray;
+}
+.card>hr {
+    margin-right: 25px;
+    margin-left: 25px;
+}
+.rounded-lg
+{
+border-style: dashed;
+color: grey;
+}
+
+.form-control
+{
+    text-align: center;
+    font-size: 30px;
+    color: #777777;
+}
+.btn-group-lg>.btn, .btn-lg
+{
+    padding:.5rem 1rem;
+    font-size:1.25rem;
+    line-height: 1.5;
+    border-radius: 10.3rem;
+}
+
+.btn-primary 
+{
+    color: #fff;
+    background-color: firebrick;
+    border-color: firebrick;
+}
