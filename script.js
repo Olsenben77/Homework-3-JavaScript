@@ -1,5 +1,4 @@
 
-
 var lower = "abcdefghijklmnopqrstuvwxyz".split('');
 var numbers = "1234567890".split('');
 var upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split('');
