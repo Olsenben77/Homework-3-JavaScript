@@ -3,6 +3,7 @@ var lower = "abcdefghijklmnopqrstuvwxyz".split('');
 var numbers = "1234567890".split('');
 var upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split('');
 var specialCharacters = "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~".split('');
+var passwordOptions;
 
 
 function generatePasswordOptions() {
@@ -41,7 +42,7 @@ function generatePasswordOptions() {
 
     }
 
-    var passwordOptions = {
+    passwordOptions = {
         howManyCharacters: howManyCharacters,
         wantsLowercase: wantsLowercase,
         wantsNumbers: wantsNumbers,
@@ -57,9 +58,6 @@ function generatePassword() {
 
     var options = generatePasswordOptions();
 
-    console.log(options.howManyCharacters);
-    console.log(options.wantsLowercase);
-
     var total = [];
 
     var passwordPotential = [];
@@ -67,14 +65,20 @@ function generatePassword() {
     var passwordFinal = [];
 
 
+    for (var i = 0; i <= passwordOptions.howManyCharacters; i++) {
+        var randindex = Math.floor(Math.random() * passwordPotential.length);
+        password = password + passwordPotential[randindex]
+    }
+    var password = passwordFinal;
+
+    passwordPotential = (lower + upper + numbers + specialCharacters * randindex);
+
+    passwordFinal = (passwordPotential * randindex);
+
+    var passwordDisplay = document.querySelector("#exampleFormControlTextarea1");
+    passwordDisplay.textContent = (passwordFinal);
+
 }
-
-var password = "";
-
-
-// for (var i = 0; i <= complexity; i++) {
-//     password = password = values.charAt(Math.floor(Math.random() * Math.floor(value.length - 1)));
-// }
 
 var generatePasswordButton = document.querySelector('#generatePassword');
 var copyToClipboardButton = document.querySelector('#CopytoClipboard');
@@ -87,4 +91,5 @@ function copyPassword() {
     document.getElementById("CopytoClipboard").select();
 
     document.execCommand("Copy");
-    alert("Password copied to Clipboard!");}
+    alert("Password copied to Clipboard!");
+}

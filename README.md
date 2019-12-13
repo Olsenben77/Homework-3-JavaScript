@@ -9,6 +9,7 @@ I created this Password Generator to practice and increase my abilities in JavaS
 Homework 3 features beginner-level HTML, CSS, and Bootstrap, but focuses more handedly on JavaScript and its role in making a user-responsive experience. The application contains multiple prompts and confirms, asking the user to specify password-length, character/number type, and symbol inclusion. The displayed buttons work to generate the JavaScript and the given textbox displays user results. As a whole, this program runs the user through a set-list of questions, to help generate a completely random and secure password that they could not obtain on their own.
 
 
+
 References:
 https://www.w3schools.com/js/js_htmldom_eventlistener.asp
 
