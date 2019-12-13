@@ -37,8 +37,11 @@
                         <hr>
                         </hr>
                         <div class="rounded-lg">
-                            <textarea class="form-control" id="exampleFormControlTextarea1" cols="142" rows="4>
-                                 class=Password text-center"> Your Secure Password </textarea>
+                            <textarea
+                            id="exampleFormControlTextarea1"
+                            placeholder='Your Secure Password'
+                            style='text-align: center; height: 200px; width: 100%';>
+                             </textarea>
                         </div>
                     </div>
                 </div>
@@ -50,18 +53,17 @@
                     <p></p>
                 </div>
                 <div class="col-sm-4">
-                    <div id="GenerateButton">
-                        <button type="button" class="btn btn-primary btn-lg btn-block">
-                            <h3>Generate Password</h3>
-                        </button>
-                    </div>
+                    <button type="button" id="generatePassword" class="btn btn-primary btn-lg btn-block">
+                        <h3>Generate Password</h3>
+                    </button>
                 </div>
                 <div class="col-sm-2">
                     <p></p>
                 </div>
                 <div class="col-sm-4">
                     <div id="display">
-                        <button type="button" onclick="" class="btn btn-secondary btn-lg btn-block" disabled>
+                        <button type="button" id="CopytoClipboard" onclick="" class="btn btn-secondary btn-lg btn-block"
+                            disabled>
                             <h3>Copy to Clipboard</h3>
                         </button>
                     </div>
@@ -78,7 +80,7 @@
             <p></p>
         </div>
     </div>
-    </div>
+
 
     <script src="./script.js"></script>
 
